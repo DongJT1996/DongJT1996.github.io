@@ -138,6 +138,79 @@ body {
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+          <!-- project1: animatable nerf -->
+          <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='unprocessing_image'><img src='images/animate.jpg'></div>
+                <img src='images/animate.jpg'>
+              </div>
+              <script type="text/javascript">
+                function unprocessing_start() {
+                  document.getElementById('unprocessing_image').style.opacity = "1";
+                }
+
+                function unprocessing_stop() {
+                  document.getElementById('unprocessing_image').style.opacity = "0";
+                }
+                unprocessing_stop()
+              </script>
+            </td>
+            <td valign="middle" width="75%">
+              <a href="https://arxiv.org/pdf/2105.02872.pdf">
+                <papertitle>Animatable Neural Radiance Fields for Human Body Modeling</papertitle>
+              </a>
+              <br>
+	          Sida Peng*, <strong>Junting Dong*</strong>, Qianqian Wang, Shangzhan Zhang, Qing Shuai, Hujun Bao, Xiaowei Zhou
+
+              <br>
+              <em>arXiv</em>, 2021 &nbsp
+              <br>
+              <a href="https://zju3dv.github.io/animatable_nerf/">project page</a> /
+	      <a href="https://github.com/zju3dv/animatable_nerf">code</a>
+              <p></p>
+              <p>Address the challenge of reconstructing an animatable human model from a multi-view video.</p>
+            </td>
+          </tr>
+
+          <!-- project1: mirror -->
+          <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='unprocessing_image'><img src='images/mirror.jpg'></div>
+                <img src='images/mirror.jpg'>
+              </div>
+              <script type="text/javascript">
+                function unprocessing_start() {
+                  document.getElementById('unprocessing_image').style.opacity = "1";
+                }
+
+                function unprocessing_stop() {
+                  document.getElementById('unprocessing_image').style.opacity = "0";
+                }
+                unprocessing_stop()
+              </script>
+            </td>
+            <td valign="middle" width="75%">
+              <a href="https://arxiv.org/pdf/2104.00340.pdf">
+                <papertitle>Reconstructing 3D Human Pose by Watching Humans in the Mirror</papertitle>
+              </a>
+              <br>
+	          Qi Fang*, Qing Shuai*,<strong>Junting Dong</strong>, Hujun Bao, Xiaowei Zhou
+
+              <br>
+              <em>CVPR</em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+              <a href="https://zju3dv.github.io/Mirrored-Human/">project page</a> /
+	      <a href="https://github.com/zju3dv/Mirrored-Human">dataset</a>
+              <p></p>
+              <p>Introduce a new task of reconstructing 3D human pose from a single image in which we can see the person and the person's image through a mirror.</p>
+            </td>
+          </tr>
+
+
+          <!-- project2 -->
+
           <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
             <td width="25%">
               <div class="one">
@@ -211,7 +284,7 @@ body {
 	      <a href="https://github.com/zju3dv/mvpose">code</a> /
               <a href="https://www.bilibili.com/video/av55769524/">talk</a> 
               <p></p>
-              <p>Using a multi-way matching algorithm to cluster the detected 2D poses for multi-person 3D pose estimation.</p>
+              <p>Use a multi-way matching algorithm to cluster the detected 2D poses for multi-person 3D pose estimation.</p>
             </td>
           </tr>
 
