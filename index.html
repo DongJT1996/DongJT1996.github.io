@@ -137,6 +137,50 @@ body {
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <!-- project1: example -->
+          <tr onmouseout="tmvpose_stop()" onmouseover="tmvpose_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='tmvpose_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/tmvpose_resize.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/tmvpose.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function tmvpose_start() {
+                  document.getElementById('tmvpose_image').style.opacity = "1";
+                }
+
+                function tmvpose_stop() {
+                  document.getElementById('tmvpose_image').style.opacity = "0";
+                }
+                tmvpose_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://jtdong.com/">
+                <papertitle>Fast and Robust Multi-Person 3D Pose Estimation and Tracking from Multiple Views</papertitle>
+              </a>
+              <br>
+	      <strong>Junting Dong</strong>,
+              Qi Fang,
+              Wen Jiang,
+              Yurou Yang,
+              Qixing Huang,
+              Hujun Bao,
+              Xiaowei Zhou
+              <br>
+              <em>T-PAMI</em>, 2021
+              <br>
+              <a href="https://zju3dv.github.io/mvpose/">project page</a> /
+	      <a href="https://zju3dv.github.io/mvpose/egpaper_supplementary.pdf">supplementary</a> /
+	      <a href="https://github.com/zju3dv/mvpose">code</a> /
+              <p></p>
+              <p>Extend the Mvpose with temporal tracking and filtering.</p>
+            </td>
+          </tr>
+
 
           <!-- project1: animatable nerf -->
           <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
