@@ -1,0 +1,382 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+
+
+<html>
+
+<head>
+  <meta name=viewport content="width=800">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+    
+    a {
+      color: #1772d0;
+      text-decoration: none;
+    }
+    
+
+
+    a:hover {
+      color: #f09228;
+      text-decoration: none;
+    }
+    
+    body,
+    td,
+    th,
+    tr,
+    p,
+    a {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px
+    }
+    
+    strong {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+    
+    heading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 22px;
+    }
+    
+    papertitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700
+    }
+    
+    name {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 32px;
+    }
+    
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+    
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+    
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+    
+    span.highlight {
+      background-color: #ffffd0;
+    }
+
+html {
+  height: 98%;
+}
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.footer {
+  grid-row-start: 3;
+  grid-row-end: 2;
+}
+
+
+  </style>
+  <link rel="icon" type="image/png" href="images/zju.jpg">
+  <title>Junting Dong</title>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="67%" valign="middle">
+              <p align="center">
+                <name>Junting Dong</name>
+              </p>
+              <p>I am a fourth-year (2018-) Ph.D. student in the <a href='http://www.en.cs.zju.edu.cn/'>Department of Computer Science</a> at <a href='http://www.zju.edu.cn/english/'>Zhejiang University</a>, advised by Prof. <a href='http://www.cad.zju.edu.cn/home/xzhou/'> Xiaowei Zhou</a>. My research interests lie in computer vision and machine learning, especially in the area of 3D vision.
+              </p>
+              <p align=center> 
+                <a href="mailto:jtdong@zju.edu.cn">Email</a> &nbsp/&nbsp
+		<a href="https://scholar.google.com/citations?hl=en&user=dEzL5pAAAAAJ">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/dongjt1996">Github</a> 
+              </p>
+
+
+            </td>
+            <td width="33%">
+              <img src="images/djtnew.jpg">
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Publications</heading>
+
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <!-- project1: example -->
+          <tr onmouseout="tmvpose_stop()" onmouseover="tmvpose_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='tmvpose_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/tmvpose_resize.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/tmvpose.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function tmvpose_start() {
+                  document.getElementById('tmvpose_image').style.opacity = "1";
+                }
+
+                function tmvpose_stop() {
+                  document.getElementById('tmvpose_image').style.opacity = "0";
+                }
+                tmvpose_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/document/9492024">
+                <papertitle>Fast and Robust Multi-Person 3D Pose Estimation and Tracking from Multiple Views</papertitle>
+              </a>
+              <br>
+	      <strong>Junting Dong</strong>,
+              Qi Fang,
+              Wen Jiang,
+              Yurou Yang,
+              Qixing Huang,
+              Hujun Bao,
+              Xiaowei Zhou
+              <br>
+              <em>T-PAMI</em>, 2021
+              <br>
+              <a href="https://zju3dv.github.io/mvpose/">project page</a> /
+	      <a href="https://zju3dv.github.io/mvpose/egpaper_supplementary.pdf">supplementary</a> /
+	      <a href="https://github.com/zju3dv/mvpose">code</a> /
+              <p></p>
+              <p>Extend the Mvpose with temporal tracking and filtering.</p>
+            </td>
+          </tr>
+
+
+          <!-- project1: animatable nerf -->
+          <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='unprocessing_image'><img src='images/animate.jpg'></div>
+                <img src='images/animate.jpg'>
+              </div>
+              <script type="text/javascript">
+                function unprocessing_start() {
+                  document.getElementById('unprocessing_image').style.opacity = "1";
+                }
+
+                function unprocessing_stop() {
+                  document.getElementById('unprocessing_image').style.opacity = "0";
+                }
+                unprocessing_stop()
+              </script>
+            </td>
+            <td valign="middle" width="75%">
+              <a href="https://arxiv.org/pdf/2105.02872.pdf">
+                <papertitle>Animatable Neural Radiance Fields for Human Body Modeling</papertitle>
+              </a>
+              <br>
+	          Sida Peng*, <strong>Junting Dong*</strong>, Qianqian Wang, Shangzhan Zhang, Qing Shuai, Hujun Bao, Xiaowei Zhou
+
+              <br>
+              <em>ICCV</em>, 2021 &nbsp
+              <br>
+              <a href="https://zju3dv.github.io/animatable_nerf/">project page</a> /
+	      <a href="https://github.com/zju3dv/animatable_nerf">code</a>
+              <p></p>
+              <p>Address the challenge of reconstructing an animatable human model from a multi-view video.</p>
+            </td>
+          </tr>
+
+          <!-- project1: mirror -->
+          <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='unprocessing_image'><img src='images/mirror.jpg'></div>
+                <img src='images/mirror.jpg'>
+              </div>
+              <script type="text/javascript">
+                function unprocessing_start() {
+                  document.getElementById('unprocessing_image').style.opacity = "1";
+                }
+
+                function unprocessing_stop() {
+                  document.getElementById('unprocessing_image').style.opacity = "0";
+                }
+                unprocessing_stop()
+              </script>
+            </td>
+            <td valign="middle" width="75%">
+              <a href="https://arxiv.org/pdf/2104.00340.pdf">
+                <papertitle>Reconstructing 3D Human Pose by Watching Humans in the Mirror</papertitle>
+              </a>
+              <br>
+	          Qi Fang*, Qing Shuai*,<strong>Junting Dong</strong>, Hujun Bao, Xiaowei Zhou
+
+              <br>
+              <em>CVPR</em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+              <a href="https://zju3dv.github.io/Mirrored-Human/">project page</a> /
+	      <a href="https://github.com/zju3dv/Mirrored-Human">dataset</a>
+              <p></p>
+              <p>Introduce a new task of reconstructing 3D human pose from a single image in which we can see the person and the person's image through a mirror.</p>
+            </td>
+          </tr>
+
+
+          <!-- project2 -->
+
+          <tr onmouseout="imocap_stop()" onmouseover="imocap_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='imocap_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/imocap.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/imocap.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function imocap_start() {
+                  document.getElementById('imocap_image').style.opacity = "1";
+                }
+
+                function imocap_stop() {
+                  document.getElementById('imocap_image').style.opacity = "0";
+                }
+                imocap_stop()
+              </script>
+            </td>
+
+
+
+
+            <td valign="middle" width="75%">
+              <a href="https://arxiv.org/pdf/2008.07931.pdf">
+                <papertitle>Motion Capture from Internet Videos</papertitle>
+              </a>
+              <br>
+	      <strong>Junting Dong*</strong>, 
+              Qing Shuai*,
+              Yuanqing Zhang,
+	      Xian Liu,
+              Xiaowei Zhou,
+	      Hujun Bao
+              <br>
+              <em>ECCV</em>, 2020 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+              <a href="https://zju3dv.github.io/iMoCap/">project page</a> /
+	      <a href="https://github.com/zju3dv/iMoCap">dataset</a>
+              <p></p>
+              <p>Introduce a new task of motion capture from a collection of Internet videos that record different instances of a person’s certain action and develop a new optimization-bassed framework to solve this problem.</p>
+            </td>
+          </tr>
+	
+	<tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='unprocessing_image'><img src='images/prime.jpg'></div>
+                <img src='images/prime.jpg'>
+              </div>
+              <script type="text/javascript">
+                function unprocessing_start() {
+                  document.getElementById('unprocessing_image').style.opacity = "1";
+                }
+
+                function unprocessing_stop() {
+                  document.getElementById('unprocessing_image').style.opacity = "0";
+                }
+                unprocessing_stop()
+              </script>
+            </td>
+            <td valign="middle" width="75%">
+              <a href="https://arxiv.org/pdf/1901.04111.pdf">
+                <papertitle>Fast and Robust Multi-Person 3D Pose Estimation from Multiple Views</papertitle>
+              </a>
+              <br>
+	      <strong>Junting Dong</strong>, 
+              Wen Jiang,
+              Qixing Huang,
+              Hujun Bao,
+              Xiaowei Zhou
+              <br>
+              <em>CVPR</em>, 2019 &nbsp
+              <br>
+              <a href="https://zju3dv.github.io/mvpose/">project page</a> /
+	      <a href="https://zju3dv.github.io/mvpose/egpaper_supplementary.pdf">supplementary</a> /
+	      <a href="https://github.com/zju3dv/mvpose">code</a> /
+              <a href="https://www.bilibili.com/video/av55769524/">talk</a> 
+              <p></p>
+              <p>Use a multi-way matching algorithm to cluster the detected 2D poses for multi-person 3D pose estimation.</p>
+            </td>
+          </tr>
+
+
+
+
+
+        </table>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107865707-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-107865707-2');
+</script>
+
+
+
+        </td>
+
+    </tr>
+
+  </table>
+ <div class="content">
+  <!-- content -->
+</div>
+
+
+
+<div class="footer" align='center'>	
+<a href="https://github.com/jonbarron/jonbarron_website">This guy has an awesome website</a>	
+</div>
+
+
+</body>
+
+</html>
