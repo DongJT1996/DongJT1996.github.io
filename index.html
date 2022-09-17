@@ -112,7 +112,7 @@ body {
               <p align="center">
                 <name>Junting Dong</name>
               </p>
-              <p>I am a fourth-year (2018-) Ph.D. student in the <a href='http://www.en.cs.zju.edu.cn/'>Department of Computer Science</a> at <a href='http://www.zju.edu.cn/english/'>Zhejiang University</a>, advised by Prof. <a href='http://www.cad.zju.edu.cn/home/xzhou/'> Xiaowei Zhou</a>. My research interests lie in computer vision and machine learning, especially in the area of 3D vision.
+              <p>I am a fifth-year (2018-) Ph.D. student in the <a href='http://www.en.cs.zju.edu.cn/'>Department of Computer Science</a> at <a href='http://www.zju.edu.cn/english/'>Zhejiang University</a>, advised by Prof. <a href='http://www.cad.zju.edu.cn/home/xzhou/'> Xiaowei Zhou</a>. My research interests lie in computer vision and machine learning, especially in the area of 3D vision.
               </p>
               <p align=center> 
                 <a href="mailto:jtdong@zju.edu.cn">Email</a> &nbsp/&nbsp
@@ -137,6 +137,91 @@ body {
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                                        <!-- project: TotalSelfScan -->
+          <tr onmouseout="total_stop()" onmouseover="total_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='total_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/processed_totalselfscan.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/totalselfscan_000001.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function total_start() {
+                  document.getElementById('total_image').style.opacity = "1";
+                }
+
+                function total_stop() {
+                  document.getElementById('total_image').style.opacity = "0";
+                }
+                total_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://jtdong.com/">
+                <papertitle>TotalSelfScan: Learning Full-body Avatars from Self-Portrait Videos of Faces, Hands, and Bodies</papertitle>
+              </a>
+              <br>
+	      <strong>Junting Dong*</strong>,
+              Qi Fang*,
+              Yudong Guo,
+              Sida Peng,
+              Qing Shuai,
+              Hujun Bao,
+              Xiaowei Zhou
+              <br>
+              <em>NeurIPS</em>, 2022
+              <br>
+              <a href="http://jtdong.com/">project page</a> /
+<!--	      <a href="https://zju3dv.github.io/mvpose/egpaper_supplementary.pdf">supplementary</a> /-->
+	      <a href="http://jtdong.com/">dataset</a> /
+              <p></p>
+<!--              <p>Extend the Mvpose with temporal tracking and filtering.</p>-->
+            </td>
+          </tr>
+                              <!-- project1: iMoCap -->
+          <tr onmouseout="ijcv_imocap_stop()" onmouseover="ijcv_imocap_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ijcv_imocap_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/processed_iMoCap_video_loading.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/processed_ijcv_teaser.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function ijcv_imocap_start() {
+                  document.getElementById('ijcv_imocap_image').style.opacity = "1";
+                }
+
+                function ijcv_imocap_stop() {
+                  document.getElementById('ijcv_imocap_image').style.opacity = "0";
+                }
+                ijcv_imocap_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://link.springer.com/article/10.1007/s11263-022-01596-7">
+                <papertitle>iMoCap: Motion Capture from Internet Videos</papertitle>
+              </a>
+              <br>
+	      <strong>Junting Dong*</strong>,
+              Qing Shuai*,
+              Jingxiang Sun,
+              Yuanqing Zhang,
+              Hujun Bao,
+              Xiaowei Zhou
+              <br>
+              <em>IJCV</em>, 2022
+              <br>
+              <a href="https://zju3dv.github.io/iMoCap/">project page</a> /
+<!--	      <a href="https://zju3dv.github.io/mvpose/egpaper_supplementary.pdf">supplementary</a> /-->
+	      <a href="https://github.com/zju3dv/iMoCap">dataset</a> /
+              <p></p>
+<!--              <p>Extend the Mvpose with temporal tracking and filtering.</p>-->
+            </td>
+          </tr>
                     <!-- project1: example -->
           <tr onmouseout="tmvpose_stop()" onmouseover="tmvpose_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -177,7 +262,7 @@ body {
 	      <a href="https://zju3dv.github.io/mvpose/egpaper_supplementary.pdf">supplementary</a> /
 	      <a href="https://github.com/zju3dv/mvpose">code</a> /
               <p></p>
-              <p>Extend the Mvpose with temporal tracking and filtering.</p>
+<!--              <p>Extend the Mvpose with temporal tracking and filtering.</p>-->
             </td>
           </tr>
 
@@ -213,7 +298,7 @@ body {
               <a href="https://zju3dv.github.io/animatable_nerf/">project page</a> /
 	      <a href="https://github.com/zju3dv/animatable_nerf">code</a>
               <p></p>
-              <p>Address the challenge of reconstructing an animatable human model from a multi-view video.</p>
+<!--              <p>Address the challenge of reconstructing an animatable human model from a multi-view video.</p>-->
             </td>
           </tr>
 
@@ -248,7 +333,7 @@ body {
               <a href="https://zju3dv.github.io/Mirrored-Human/">project page</a> /
 	      <a href="https://github.com/zju3dv/Mirrored-Human">dataset</a>
               <p></p>
-              <p>Introduce a new task of reconstructing 3D human pose from a single image in which we can see the person and the person's image through a mirror.</p>
+<!--              <p>Introduce a new task of reconstructing 3D human pose from a single image in which we can see the person and the person's image through a mirror.</p>-->
             </td>
           </tr>
 
@@ -259,7 +344,7 @@ body {
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='imocap_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/imocap.mp4" type="video/mp4">
+                <source src="images/processed_iMoCap_video_loading.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
                 <img src='images/imocap.jpg' width="160">
@@ -296,7 +381,7 @@ body {
               <a href="https://zju3dv.github.io/iMoCap/">project page</a> /
 	      <a href="https://github.com/zju3dv/iMoCap">dataset</a>
               <p></p>
-              <p>Introduce a new task of motion capture from a collection of Internet videos that record different instances of a person’s certain action and develop a new optimization-bassed framework to solve this problem.</p>
+<!--              <p>Introduce a new task of motion capture from a collection of Internet videos that record different instances of a person’s certain action and develop a new optimization-bassed framework to solve this problem.</p>-->
             </td>
           </tr>
 	
@@ -335,7 +420,7 @@ body {
 	      <a href="https://github.com/zju3dv/mvpose">code</a> /
               <a href="https://www.bilibili.com/video/av55769524/">talk</a> 
               <p></p>
-              <p>Use a multi-way matching algorithm to cluster the detected 2D poses for multi-person 3D pose estimation.</p>
+<!--              <p>Use a multi-way matching algorithm to cluster the detected 2D poses for multi-person 3D pose estimation.</p>-->
             </td>
           </tr>
 
