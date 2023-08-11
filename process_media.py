@@ -68,7 +68,7 @@ if __name__ == '__main__':
         cv2.imwrite(save_path, processed_img)
     elif file_name.endswith('.mp4'):
         # deal with videos
-        import ipdb; ipdb.set_trace(context=11)
+        # import ipdb; ipdb.set_trace(context=11)
         process_video(file_name)
         pass
     else:

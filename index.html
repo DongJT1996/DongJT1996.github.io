@@ -142,10 +142,10 @@ body {
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='total_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/processed_totalselfscan.mp4" type="video/mp4">
+                <source src="images/processed_ivsnet.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
-                <img src='images/totalselfscan_000001.jpg' width="160">
+                <img src='images/ivsnet_000000.jpg' width="160">
               </div>
               <script type="text/javascript">
                 function total_start() {
@@ -159,29 +159,62 @@ body {
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://openreview.net/pdf?id=lgj33-O1Ely">
-                <papertitle>TotalSelfScan: Learning Full-body Avatars from Self-Portrait Videos of Faces, Hands, and Bodies</papertitle>
+              <a href="https://jtdong.com/">
+                <papertitle>Learning Human View Synthesis from Internet Videos</papertitle>
               </a>
               <br>
-	      <strong>Junting Dong*</strong>,
-              Qi Fang*,
-              Yudong Guo,
-              Sida Peng,
-              Qing Shuai,
-              Hujun Bao,
-              Xiaowei Zhou
+	      <strong>Junting Dong</strong>,
+              et al.
               <br>
-              <em>NeurIPS</em>, 2022
+              <em>ICCV</em>, 2023
               <br>
-              <a href="https://zju3dv.github.io/TotalSelfScan/">project page</a> /
-	      <a href="https://zju3dv.github.io/TotalSelfScan/files/TotalSelfScan_supplementary.pdf">supplementary</a> /
-	      <a href="https://zju3dv.github.io/TotalSelfScan/">code</a> /
-	      <a href="https://zju3dv.github.io/TotalSelfScan/">dataset</a> /
+              <a href="https://jtdong.com/">project page</a> /
+	      <a href="https://jtdong.com/">code</a> /
+	      <a href="https://jtdong.com/">dataset</a> /
               <p></p>
 <!--              <p>Extend the Mvpose with temporal tracking and filtering.</p>-->
             </td>
           </tr>
-		
+                                        <!-- project: Navi -->
+          <tr onmouseout="total_stop()" onmouseover="total_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='total_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/processed_navi.png" type="video/mp4">
+<!--                <source src="images/processed_ivsnet.mp4" type="video/mp4">-->
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/processed_navi.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function total_start() {
+                  document.getElementById('total_image').style.opacity = "1";
+                }
+
+                function total_stop() {
+                  document.getElementById('total_image').style.opacity = "0";
+                }
+                total_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2304.11342">
+                <papertitle>NaviNeRF: NeRF-based 3D Representation Disentanglement by Latent Semantic Navigation</papertitle>
+              </a>
+              <br>
+              Baao Xie, Bohan Li, Zequn Zhang,
+	      <strong>Junting Dong</strong>,
+              Xin Jin, Jingyu Yang, Wenjun Zeng
+              <br>
+              <em>ICCV</em>, 2023
+              <br>
+<!--              <a href="https://jtdong.com/">project page</a> /-->
+	      <a href="https://github.com/Arlo0o/NaviNeRF">code</a> 
+              <p></p>
+<!--              <p>Extend the Mvpose with temporal tracking and filtering.</p>-->
+            </td>
+          </tr>
+
 		
 		
 		<!-- project: TotalSelfScan -->
