@@ -50,6 +50,7 @@ def process_video(file_name):
         save_path, os.path.dirname(file_name), 'processed_'+os.path.basename(file_name))
     os.system(cmd)
 
+
 if __name__ == '__main__':
 
     import argparse
