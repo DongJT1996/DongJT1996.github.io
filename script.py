@@ -5,7 +5,14 @@ import cv2
 from os.path import join
 import os
 
+INPUT_VIDEO = '/mnt/data/download/merged_withf.mp4'
+
 if __name__ == '__main__':
+    video_dir = os.path.dirname(INPUT_VIDEO)
+    video_name = os.path.splitext(os.path.basename(INPUT_VIDEO))[0]
+    tmp_video = os.path.join(video_dir, f'{video_name}_.mp4')
+    output_video = os.path.join(video_dir, f'{video_name}_final.mp4')
+
     # image
     if False:
         img = join('images', 'tmvpose.png')
@@ -14,10 +21,5 @@ if __name__ == '__main__':
         cv2.imwrite(join('images', 'tmvpose.jpg'), img_save)
     # video
     if True:
-        # os.system('ffmpeg -i tmvpose.mp4 -ss 00:00:40 -t 00:00:07 -vcodec h264 -strict -2 tmvpose_.mp4') # select time range
-        # os.system('ffmpeg -i tmvpose_.mp4 -strict -2 -vf crop=500:500:1200:200 tmvpose_crop.mp4') # select space range
-        # os.system('ffmpeg -i tmvpose_crop.mp4 -vf scale=160:160, setsar=1:1 tmvpose_resize.mp4')
-        os.system('ffmpeg -i /mnt/data/download/homie.mp4 -ss 00:00:00 -t 00:00:20 -vcodec h264 -strict -2 /mnt/data/download/homie_.mp4')
-        # os.system('ffmpeg -i tmvpose_.mp4 -strict -2 -vf crop=500:500:1200:200 tmvpose_crop.mp4')
-        os.system('ffmpeg -i /mnt/data/download/homie_.mp4 -vf "scale=160:160:force_original_aspect_ratio=decrease,pad=160:160:(ow-iw)/2:(oh-ih)/2:white" -c:a copy /mnt/data/download/homie_final.mp4')
-        # os.system('ffmpeg -i /mnt/data/download/homie_.mp4 -vf scale=160:160, setsar=1:1 /mnt/data/download/homie_final.mp4')
+        os.system(f'ffmpeg -i {INPUT_VIDEO} -ss 00:00:00 -t 00:00:10 -vcodec h264 -strict -2 {tmp_video}')
+        os.system(f'ffmpeg -i {tmp_video} -vf "scale=160:160:force_original_aspect_ratio=decrease,pad=160:160:(ow-iw)/2:(oh-ih)/2:white" -c:a copy {output_video}')
