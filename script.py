@@ -5,7 +5,7 @@ import cv2
 from os.path import join
 import os
 
-INPUT_VIDEO = '/mnt/data/download/merged_withf.mp4'
+INPUT_VIDEO = '/mnt/data/download/High-Precision2.mp4'
 
 if __name__ == '__main__':
     video_dir = os.path.dirname(INPUT_VIDEO)
@@ -21,5 +21,5 @@ if __name__ == '__main__':
         cv2.imwrite(join('images', 'tmvpose.jpg'), img_save)
     # video
     if True:
-        os.system(f'ffmpeg -i {INPUT_VIDEO} -ss 00:00:00 -t 00:00:10 -vcodec h264 -strict -2 {tmp_video}')
+        os.system(f'ffmpeg -i {INPUT_VIDEO} -ss 00:00:05 -t 00:00:25 -vcodec h264 -strict -2 {tmp_video}')
         os.system(f'ffmpeg -i {tmp_video} -vf "scale=160:160:force_original_aspect_ratio=decrease,pad=160:160:(ow-iw)/2:(oh-ih)/2:white" -c:a copy {output_video}')
